@@ -1,0 +1,195 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+ }
+ .mymodal{
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(0);
+     transition: 1s ease-in-out;
+     border: 1px solid black;
+     border-radius: 10px;
+     z-index: 10;
+     background-color: #2C3639;
+     border: none;
+     width: 730px;
+ }
+ .mymodal.activepop{
+     transform: translate(-50%,-50%) scale(1);
+     transition: 1s ease-in-out;
+ }
+.close-button{
+     cursor: pointer;
+     border: none;
+     outline: none;
+     background: none;
+     font-size: 1.25rem;
+     font-weight: bold;
+     color: aliceblue;
+ }
+ .mymodal-body {
+    padding: 10px;
+ }
+ #overlay{
+     position: fixed;
+     opacity: 0;
+     transition: 1s ease-in-out;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, .5);
+     pointer-events: none;
+ }
+ #overlay.activepop{
+     opacity: 1;
+     pointer-events: all;
+ }
+ .button-open{
+    text-align: center;
+    width: 8rem;
+    height: 3rem;
+    background: rgb(4, 4, 54);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(221, 221, 221);
+ }
+.navdisp{
+    display: none;
+}
+.download{
+    background-color:rgb(5, 0, 31);
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.resumepic{
+    width:680px;
+    height: 850px;
+    border-radius: 10px;
+}
+@media(max-width:1366px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        border: none;
+        width: 470px;
+    }
+    .resumepic{
+        width:450px;
+        height: 600px;
+    }
+    .download{
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+}
+@media(max-width:950px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        width: 575px;
+        border: none;
+    }
+    .resumepic{
+        width:500px;
+    }   
+}
+@media(max-width:600px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        width: 450px;
+        border: none;
+    }
+    .resumepic{
+        width:430px;
+        height: 510px;
+    }   
+}
+@media(max-width:480px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        width: 400px;
+        border: none;
+    }
+    .resumepic{
+        width:390px;
+        height: 490px;
+    }   
+}
+@media(max-width:410px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        width: 350px;
+        border: none;
+    }
+    .resumepic{
+        width:320px !important;
+        height: 340px;
+    }   
+} 
+@media(max-width:360px){
+    .mymodal{
+        position: fixed;
+        top: 50%;
+        left: 188px;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 1s ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #2C3639;
+        width: 335px;
+        border: none;
+    }
+    .resumepic{
+        width: 330px !important;
+        height: 430px !important;
+    }
+    .download{
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 5px;
+    }
+}

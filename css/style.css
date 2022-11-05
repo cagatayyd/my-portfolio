@@ -1,0 +1,598 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:rgb(255, 255, 255);font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:rgb(255, 255, 255);
+  overflow-x: none;
+}
+.font{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+html{
+  -webkit-tap-highlight-color: rgb(255, 255, 255);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  overflow-x: none;
+}
+
+canvas{
+  display:block;
+}
+/* ---- particles.js container ---- */
+#particles-js{
+  width: window;
+  height: window;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: block;
+}
+.name-place{
+  padding-top:12rem;
+  padding-left:6rem;
+  font-size: 3rem;
+  position: absolute;
+  color: rgb(4, 4, 54);
+  font-family: 'Roboto', sans-serif;
+  }
+/* responsive (max-width:1100)  */
+@media only screen and (max-width:1100px){
+  .name-place{
+    position: absolute;
+    padding-top:5rem;
+    padding-left:1rem;
+    font-size: 3rem;
+    color: rgb(4, 4, 54);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    }
+  .mainpage-img{
+    width:300px !important;
+    height: 300px !important;
+  }
+  .job-place{
+    position: absolute;
+    padding-top:14rem !important;
+    padding-left:1rem !important;
+    font-size: 2rem !important;
+  }
+  .links-place{
+      position: absolute;
+      padding-top:18rem !important;
+      padding-left:1rem !important;
+      font-size: 2rem;
+      color: rgb(4, 4, 54);
+      font-family: 'Roboto', sans-serif;
+    }  
+}
+@media only screen and (max-width:900px){
+#particles-js{
+  width: window;
+  height: 50% !important;
+}
+.bioimg{
+  height: 300px !important;
+}
+.mainpage-img{
+  margin-left:50% !important;
+}
+.name-place{
+    position: absolute;
+    padding-top:7rem;
+    padding-left:1rem;
+    font-size: 2rem;
+    color: rgb(4, 4, 54);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+  }
+.job-place{
+    position: absolute;
+    padding-top:13rem !important;
+    padding-left:1rem !important;
+    font-size: 1.5rem !important;
+  }
+.links-place{
+    position: absolute;
+    padding-top:17rem !important;
+    padding-left:1rem !important;
+    font-size: 1.5rem;
+    color: rgb(4, 4, 54);
+    font-family: 'Roboto', sans-serif;
+    }  
+}
+@media only screen and (max-width:650px){
+  .mainpage-img{
+    margin-top: 14% !important;
+    margin-left: 54% !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .name-place{
+      position: absolute;
+      padding-top:7rem;
+      padding-left:1rem;
+      font-size: 1.4rem;
+      color: rgb(4, 4, 54);
+    }
+  .job-place{
+      position: absolute;
+      padding-top:12rem !important;
+      padding-left:1rem !important;
+      font-size: 1.3rem !important;
+      color: rgb(4, 4, 54);
+    }
+  .links-place{
+      position: absolute;
+      padding-top:14rem !important;
+      padding-left:1rem !important;
+    }  
+}
+@media only screen and (max-width:500px){
+  #particles-js{
+    width: window;
+    height: 40% !important;
+  }
+  .mainpage-img{
+    margin-top: 18% !important;
+    margin-left: 62% !important;
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .name-place{
+      position: absolute;
+      padding-top:6rem;
+      padding-left:.1rem;
+      font-size: 1.4rem;
+      color: rgb(4, 4, 54);
+    }
+  .job-place{
+      position: absolute;
+      padding-top:10rem !important;
+      padding-left:.1rem !important;
+      font-size: 1.3rem !important;
+      color: rgb(4, 4, 54);
+    }
+  .links-place{
+      position: absolute;
+      padding-top:12rem !important;
+      padding-left:.1rem !important;
+    }
+}
+@media only screen and (max-width:430px){
+
+}
+.job-place{
+  position: absolute;
+  padding-top:21rem;
+  padding-left:6rem;
+  font-size: 2rem;
+  color: rgb(4, 4, 54);
+  font-family: 'Roboto', sans-serif;
+}
+
+.links-place{
+  position: absolute;
+  padding-top:25rem;
+  padding-left:6rem;
+  font-size: 2rem;
+  color: rgb(4, 4, 54);
+  font-family: 'Roboto', sans-serif;
+}
+.name{
+  color: rgb(255, 123, 0);
+}
+.navbar{
+  box-shadow: 0 4px 2px -2px rgb(221, 221, 221);
+  font-size: 17px;
+}
+.nav-link{
+  margin-left: 5px !important;
+}
+.nav-link:hover{
+  border-bottom: 2px solid rgb(4, 4, 54) !important;
+  transition: 1s;
+}
+
+.mainpage-img{
+  position: absolute;
+  width: 27.5rem;
+  height: 26.875rem;
+  border-radius: 25rem;
+  margin-top:7%;
+  margin-left:60%;
+  cursor: pointer;
+  transition: 2s;
+}
+.mainpage-img:hover{
+  width: 500px;
+  height: 480px;
+  transition: 2s;
+}
+.icons{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.i{
+  background-color: #2C3639;
+  color: #DCD7C9;
+  transition: 3s;
+  padding-left: 6px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+.i:hover{
+  background-color: #1B2430;
+  color: #DF7861 ;
+  transition: 3s;
+}
+.g{
+  padding-left: 4.5px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  background-color: #2C3639;
+  color: #DCD7C9;
+  transition: 3s;
+}
+.g:hover{
+  background-color: #000;
+  color: #fff;
+  transition: 3s;
+}
+.l{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  background-color: #2C3639;
+  color:#DCD7C9;
+  transition: 3s;
+}
+.l:hover{
+  background-color: rgb(245, 245, 245);
+  color: #0072b1;
+  transition: 3s;
+}
+.logo{
+  width: 100px;
+}
+/* bio part */
+.aboutme{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  position: relative;
+}
+
+.me-part{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.bioh{
+  color:rgb(4, 4, 54);
+  font-size: 18px;
+}
+.biot{
+  color:rgb(4, 4, 54);
+  font-size: 17px;
+}
+.bio{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.bioa{
+  text-decoration: none;
+  color: #000;
+  transition: 1s;
+  font-size: 17px;
+}
+.bioimg{
+  width: 500px !important;
+}
+@media only screen and (min-width:1250px){
+  .me-part{
+    margin-left: 8%;
+  }
+}
+@media only screen and (max-width:990px){
+  .bioimg{
+    width: 300px !important;
+  }
+}
+@media only screen and (max-width:800px){
+  .bioimg{
+   margin-top: 100px !important;
+  }
+  .me-part{
+    width: 100%!important;
+  }
+  .aboutme{
+    margin-bottom: -80px;
+  }
+}
+.bioa:hover{
+  color:rgb(4, 4, 54);
+  font-size: large;
+  transition: 1s;
+}
+.resume{
+  font-size: larger;
+}
+.resume i{
+    transition: 500ms;
+}
+.resume:hover i{
+  transform: translateX(.25rem);
+  transition: 500ms;
+}
+@media only screen and (max-width:500px){
+  .resume{
+    font-size: medium;
+  }
+}
+.resumepic{
+  width: 700px;
+}
+
+/* skills */
+.myskills{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.pers{
+  font-size: 30px;
+}
+.k{
+  color: rgb(255, 230, 0);
+}
+.skills{
+  background-color: rgb(86, 5, 162);
+  position: block;
+}
+
+.skillbox{
+  background-color: rgb(47, 1, 128);
+  border-radius: 10px;
+}
+.skillicons{
+  background-color: rgb(5, 0, 31);
+  color: #fff;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  transition: 1s;
+  cursor:default;
+}
+@media only screen and (max-width:770px){
+  .skillicons{
+    max-width: 130px !important;
+  }
+}
+
+.skillicons:hover{
+  background-color: rgb(5, 0, 12);
+  transition: 1s;
+}
+.js{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: yellow;
+  background-size: cover;
+}
+.html{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: #FF5733;
+}
+.css{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: #264de4;
+}
+.react{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: #61DBFB;
+}
+.bootstrap{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: rgb(103, 58, 183);
+}
+.github{
+  margin-top: 1rem;
+  font-size: 50px;
+  color: #fff;
+}
+/* edu */
+
+#education{
+  background-color: #fff;
+  position: block;
+}
+.edu{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+.eduname{
+  color:rgb(5, 0, 31);
+}
+.edupart{
+  background-color: rgb(229, 236, 251);
+  box-shadow: 1px 2px 5px 1px rgb(192, 198, 211);
+  transition: 500ms;
+}
+.edupart:hover{
+  box-shadow: 6px 4px 6px 3px rgb(192, 198, 211);
+  transition: 500ms;
+}
+.gtuedu{
+  width: 450px;
+  border: none;
+  margin-left: -15px;
+}
+
+
+.department{
+  color: #000;
+  font-size: 15px;
+}
+.date{
+  font-size: 20px;
+  color: rgb(34, 109, 0);
+}
+
+/* contact */
+.contact{
+  position: block;
+  background-color: rgb(229, 236, 251);
+  width: 100%;
+}
+.fa-headset{
+  font-size: 38px;
+}
+.contacthead{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+.contact-div{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 1px rgb(192, 198, 211);
+}
+
+.inputinner{
+  border: 1px solid gray !important;
+  background-color:rgb(229, 236, 251) !important;
+  height: 3rem !important;
+}
+.inputinner:focus{
+  border: 1px solid gray;
+  outline: none;
+}
+#message{
+  text-align: top start;
+  height:200px;
+  text-align: top start;
+  }
+  ::-webkit-input-placeholder {
+    text-align:top start;
+  }
+  
+  :-moz-placeholder {
+    text-align: top start;
+}
+.submitBut{
+  background-color: rgb(37, 6, 173);
+  color: #fff;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-family: 'Roboto', sans-serif;
+  transition: 500ms;
+  box-shadow: 1px 2px 5px 1px rgb(192, 198, 211)
+}
+.submitBut i{
+  transition: 300ms;
+}
+.submitBut:hover{
+  background-color: rgb(73, 37, 237);
+  transition: 500ms;
+}
+.submitBut:hover i{
+  transform: translateX(.25rem);
+  transition: 300ms;
+}
+.alertRed{
+  color: red !important;
+  font-size: larger;
+}
+.alertBlue{
+  color: #0072b1 !important;
+  font-size: larger;
+}
+#contact-message{
+  max-height: 140px !important;
+  min-height: 50px !important;
+}
+/* footer */
+.footer{
+  padding-left: 4% !important;
+  padding-top: 2%;
+  background-color:rgb(5, 0, 31);
+  color: #fff;
+}
+
+.footerlinks{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left:-20px
+  }
+
+.footertext{
+  color:rgb(202, 202, 209) ;
+}
+.footerlinks:hover{
+  color: rgb(236, 161, 3);
+  transition: 500ms;
+}
+.footerico{
+  color:rgb(236, 161, 3);
+}
+/* Scroll bar */
+::-webkit-scrollbar{
+  width: .6rem;
+  background-color: rgb(235, 202, 245);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(66, 1, 119);
+  border-radius: 5px;
+}
+.contactico{
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+.contactico:hover{
+  color: rgb(236, 161, 3);
+  transition: 500ms;
+}
+.bord{
+  border-bottom: 1px solid gray ;
+}
+@media only screen and (min-width:990px){
+  .navbar-collapse{
+    margin-right:15rem !important;
+  }
+}
