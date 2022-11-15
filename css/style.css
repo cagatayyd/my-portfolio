@@ -378,7 +378,11 @@ canvas{
   background-color: rgb(86, 5, 162);
   position: block;
 }
-
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skillbox{
   background-color: rgb(47, 1, 128);
   border-radius: 10px;
