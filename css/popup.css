@@ -70,7 +70,7 @@
     height: 850px;
     border-radius: 10px;
 }
-@media(max-width:1366px){
+@media(max-height:960px){
     .mymodal{
         position: fixed;
         top: 50%;
